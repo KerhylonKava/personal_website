@@ -1,0 +1,70 @@
+body {
+  /*and you comment here using this...*/
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 800;
+  margin-left: 50px;
+  background-color: #c8b0cc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*height: 50vh;*/
+  overflow: auto; /* Enables scrolling*/
+  margin: 0;
+
+  h1{
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    margin-left: 1px;
+  }
+  
+
+  
+  .bordered-image {
+    border: 5px solid #411e47; /* 5px solid purple border */
+    border-radius: 10px; /* Optional: to round the corners */
+    height: 50vh;  
+  }
+
+  .input-container {
+    margin-bottom: 20px;
+  }
+
+  .display-name {
+      font-size: 24px;
+      /*font-weight: bold;*/
+      color: #000000;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+  }
+
+  input {
+      padding: 10px;
+      font-size: 16px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+      border: 2px solid #411e47;
+      background-color: #e6d9e9;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+
+  button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+      border: 2px solid #411e47;
+      background-color: #e6d9e9;
+      color: #000000;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+
+  button:hover {
+      background-color: #e7cfeb;
+  }  
+}
