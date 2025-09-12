@@ -11,7 +11,7 @@ body {
   align-items: center;
   text-align: center;
   /*height: 50vh;*/
-  overflow: auto; /* Enables scrolling*/
+  overflow: auto; /*Enables scrolling for whatever reason*/
   margin: 0;
 
   h1{
@@ -67,4 +67,8 @@ body {
   button:hover {
       background-color: #e7cfeb;
   }  
+
+  a{
+    color: #551A8B;
+  }
 }
