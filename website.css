@@ -55,27 +55,21 @@ body {
   }
 
   .projectsDiv{
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5vw;
+    margin-left: 5vw;
     display:flex;
     justify-content: space-around;
-    /*this may not do anything
-    align-items: flex-start;*/
+    /*this may not do anything*/
+    align-items: flex-start;
     gap: 5%;
-    a {
-      color:#000000;
-      text-decoration: none;
-      :hover{
-          background-color: #c08dc9;
-        }
-      .divItem{
-        padding: 3%;
-        border: 5px solid #411e47; /* 5px purple border */
-        border-radius: 10px; /* Rounds the corners */
-        a{
-          color: #551A8B;
-        }
-      }
+  }
+  .divItem{
+    padding: 3vw;
+    border: 5px solid #411e47; /* 5px purple border */
+    border-radius: 10px; /* Rounds the corners */
+    .bordered-image {
+      margin-top: 5%;
+      height: 125px;
     }
   }
 
@@ -109,6 +103,10 @@ body {
 
   a{
     color: #551A8B;
+      .divItem{
+        color: #000000;
+        text-decoration: none;
+  }
   }
   ::selection {
   background-color: #551A8B;
