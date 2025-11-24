@@ -2,7 +2,7 @@ body {
   /*and you comment here using this...*/
   font-family: "Shadows Into Light", cursive;
   font-weight: 800;
-  background-color: #c8b0cc;
+  background-color: #bba3d1;
 
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ body {
   }
   */
   .bordered-image {
-    border: 5px solid #411e47; /* 5px purple border */
+    border: 5px solid #331053; /* 5px purple border */
     border-radius: 10px; /* Rounds the corners */
     height: 50vh;
     /*box-shadow: 2px 2px 2px rgb(45, 17, 72)*/
@@ -55,21 +55,22 @@ body {
   }
 
   .projectsDiv{
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
     display:flex;
     justify-content: space-around;
     /*this may not do anything*/
     align-items: flex-start;
-    gap: 5%;
+    gap: 2%;
   }
   .divItem{
     padding: 3vw;
-    border: 5px solid #411e47; /* 5px purple border */
+    border: 5px solid #331053; /* 5px purple border */
     border-radius: 10px; /* Rounds the corners */
     .bordered-image {
       margin-top: 5%;
-      height: 125px;
+      margin-bottom:-10%;
+      height: 15vw;
     }
   }
 
@@ -78,7 +79,7 @@ body {
       font-size: 16px;
       font-family: "Shadows Into Light", cursive;
       font-weight: 800;
-      border: 2px solid #411e47;
+      border: 2px solid #331053;
       background-color: #e6d9e9;
       border-radius: 5px;
       margin-top: 10px;
@@ -89,7 +90,7 @@ body {
       font-size: 16px;
       font-family: "Shadows Into Light", cursive;
       font-weight: 800;
-      border: 2px solid #411e47;
+      border: 2px solid #331053;
       background-color: #e6d9e9;
       color: #000000;
       cursor: pointer;
