@@ -1,15 +1,14 @@
 body {
-  /*and you comment here using this...*/
   font-family: "Shadows Into Light", cursive;
+  color: #8f89a0;
   font-weight: 800;
-  background-color: #bba3d1;
+  background-color: #0e0c13;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*height: 50vh;*/
   overflow: auto; /*Enables scrolling for whatever reason*/
   margin: 0;
 
@@ -18,7 +17,7 @@ body {
     font-weight: 400;
     margin-left: 1px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   h2{
     margin-bottom: -10px;
@@ -36,7 +35,7 @@ body {
   }
   */
   .bordered-image {
-    border: 5px solid #331053; /* 5px purple border */
+    border: 5px solid #0e0c13; /* 5px purple border */
     border-radius: 10px; /* Rounds the corners */
     height: 50vh;
     /*box-shadow: 2px 2px 2px rgb(45, 17, 72)*/
@@ -65,43 +64,15 @@ body {
   }
   .divItem{
     padding: 1vw;
-    border: 5px solid #331053; /* 5px purple border */
-    border-radius: 10px; /* Rounds the corners */
+    border: 0.7vw solid #8f89a0; /* 5px purple border */
+    border-radius: 1.4vw; /* Rounds the corners */
+    /*height: 35vw;*/
     .bordered-image {
-      margin-top: 5%;
-      /*margin-bottom:-10%;*/
-      height: 15vw;
+      margin-top: 2%;
+      margin-bottom:-2%;
+      height: 26vw;
     }
   }
-
-  input {
-      padding: 10px;
-      font-size: 16px;
-      font-family: "Shadows Into Light", cursive;
-      font-weight: 800;
-      border: 2px solid #331053;
-      background-color: #e6d9e9;
-      border-radius: 5px;
-      margin-top: 10px;
-  }
-
-  button {
-      padding: 10px 20px;
-      font-size: 16px;
-      font-family: "Shadows Into Light", cursive;
-      font-weight: 800;
-      border: 2px solid #331053;
-      background-color: #e6d9e9;
-      color: #000000;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-top: 10px;
-  }
-
-  button:hover {
-      background-color: #e7cfeb;
-  }  
-
   a{
     color: #551A8B;
       .divItem{
@@ -111,7 +82,7 @@ body {
   }
   ::selection {
   background-color: #551A8B;
-  color: white;
+  color: #8f89a0;
   border-radius: 9999px; /* fully rounded */
   padding: 0.2em 0.08em;
   }
