@@ -7,9 +7,12 @@ function updateName() {
     if (ghostName.trim() == "Eddy") {
         displayElement.textContent = "Hello, I'm " + ghostName + "!"; // ghost talking
         //add something about the weather
-    } 
-    else if (ghostName.trim() == "Esther") {
-        displayElement.textContent = "Oh, that's actually the name of the programmer for this website... A different name maybe?";
+    }
+      else if (ghostName.trim().toLowerCase() == "esther") {
+        displayElement.textContent = "Oh, that's actually the name of the programmer for this website... A different name maybe?";     
+    }
+    else if (ghostName.trim().toLowerCase() == "hello") {
+        displayElement.textContent = "Hello, Hello, Hello, Hello, Hello!"
     }
     else if (ghostName.trim() !== "") {
         displayElement.textContent = "Hello, my name is " + ghostName + "!";
