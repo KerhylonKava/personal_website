@@ -1,0 +1,140 @@
+:root{
+    --base-color: #D5C3EA;
+    --base-variant: #D5C3EA;
+    --text-color: #2b1c3b;
+    --secondary-text: #5D3C80;
+    --primary-color: #2b1c3b;
+    --accent-color: #514376;
+}
+.darkmode{
+  --base-color: #0e0c13;
+  --base-variant: #0e0c13;
+  --text-color: #8f89a0;
+  --secondary-text: #8f89a0;
+  --primary-color: #8f89a0;
+  --accent-color: #5D3C80;
+}
+
+body {
+  /*and you comment here using this...*/
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 800;
+  background-color:var(--base-color);
+  color:var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*height: 50vh;*/
+  overflow: auto; /*Enables scrolling for whatever reason*/
+  margin: 0;
+
+  h1{
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    margin-left: 1px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  h2{
+    margin-bottom: -10px;
+    margin-top: 5px;
+  }
+  h3 {
+    margin-bottom: -15px;
+    margin-top: -8px;
+    font-family: "Sedgwick Ave Display", cursive;
+  }
+  /*
+  p{
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  */
+  .bordered-image {
+    border: 5px solid var(--primary-color); /* 5px purple border */
+    border-radius: 10px; /* Rounds the corners */
+    height: 50vh;
+    /*box-shadow: 2px 2px 2px rgb(45, 17, 72)*/
+  }
+
+  .display-name {
+      font-size: 24px;
+      /*font-weight: bold;*/
+      color: var(--text-color);
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+  }
+
+  .projectsDiv{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    display:flex;
+    justify-content: space-around;
+    /*this may not do anything*/
+    align-items: flex-start;
+    gap: 2%;
+  }
+  .divItem{
+    background-color: var(--base-variant);
+    padding: 1vw;
+    border: 5px solid var(--primary-color); /* 5px purple border */
+    border-radius: 10px; /* Rounds the corners */
+    .bordered-image {
+      margin-top: 5%;
+      /*margin-bottom:-10%;*/
+      height: 15vw;
+    }
+  }
+
+  .input-container {
+    margin-bottom: 20px;
+    color:var(--text-color);
+  }
+    input {
+        padding: 10px;
+        font-size: 16px;
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 800;
+        border: 2px solid var(--primary-color);
+        background-color: var(--base-color); /*fix!*/
+        border-radius: 5px;
+        margin-top: 10px;
+}
+        input::placeholder {
+        color: var(--secondary-text); /* Sets the placeholder color to red */   
+  }
+  button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+      border: 2px solid var(--primary-color);
+      background-color: var(--base-color);
+      color: var(--text-color);
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+
+  button:hover {
+      background-color: #e7cfeb; /*fix to base varient*/
+  }  
+
+  a{
+    color: var(--secondary-text);
+  }
+  ::selection {
+  background-color: var(--accent-color);
+  color: var(--base-color); /*was white btw*/
+  border-radius: 9999px; /* fully rounded */
+  padding: 0.2em 0.08em;
+  }
+  /*
+  .multi-line-highlight{
+    border-radius: 20px;
+    padding: 2px 6px;
+ }*/
+}
