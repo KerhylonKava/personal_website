@@ -8,9 +8,9 @@
 }
 .darkmode{
   --base-color: #0e0c13;
-  --base-variant: #0e0c13;
+  --base-variant: #8f89a0;
   --text-color: #8f89a0;
-  --secondary-text: #8f89a0;
+  --secondary-text: #514376;
   --primary-color: #8f89a0;
   --accent-color: #5D3C80;
 }
@@ -78,11 +78,12 @@ body {
     gap: 2%;
   }
   .divItem{
-    background-color: var(--base-variant);
+    background-color: var(--base-color);
     padding: 1vw;
     border: 5px solid var(--primary-color); /* 5px purple border */
     border-radius: 10px; /* Rounds the corners */
     .bordered-image {
+    border: 5px solid var(--base-color); 
       margin-top: 5%;
       /*margin-bottom:-10%;*/
       height: 15vw;
@@ -100,6 +101,7 @@ body {
         font-weight: 800;
         border: 2px solid var(--primary-color);
         background-color: var(--base-color); /*fix!*/
+        color:var(--text-color);
         border-radius: 5px;
         margin-top: 10px;
 }
@@ -111,30 +113,58 @@ body {
       font-size: 16px;
       font-family: "Shadows Into Light", cursive;
       font-weight: 800;
+      background-color: var(--text-color);
+      color: var(--base-color);
       border: 2px solid var(--primary-color);
-      background-color: var(--base-color);
-      color: var(--text-color);
       cursor: pointer;
       border-radius: 5px;
       margin-top: 10px;
   }
 
   button:hover {
-      background-color: #e7cfeb; /*fix to base varient*/
+      background-color: var(--base-color);
+      color: var(--text-color);
+      border: 2px solid var(--primary-color)
+
   }  
+    #themeToggle{
+        height: 35px;
+        width: 35px;
+        padding: 0;
+        border-radius: 50%;
+        /*background-color: var(--base-color);*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    #themeToggle svg{
+        fill: var(--base-color);
+    }
+    #themeToggle:hover svg{
+        fill: var(--text-color);
+    }
+    /*
+    .darkmode #themeToggle svg:last-child{
+        display: none;
+    }
+    #themeToggle svg:first-child{
+        display: none;
+    }
+    #themeToggle svg:last-child{
+        display: block;
+    }
+    */
 
   a{
     color: var(--secondary-text);
   }
   ::selection {
   background-color: var(--accent-color);
-  color: var(--base-color); /*was white btw*/
+  color: var(--base-variant); /*was white btw*/
   border-radius: 9999px; /* fully rounded */
   padding: 0.2em 0.08em;
   }
-  /*
-  .multi-line-highlight{
-    border-radius: 20px;
-    padding: 2px 6px;
- }*/
 }
