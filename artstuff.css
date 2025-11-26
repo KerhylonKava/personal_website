@@ -1,6 +1,14 @@
 :root{
+    --base-color: #D5C3EA;
+    --base-variant: #D5C3EA;
+    --text-color: #2b1c3b;
+    --secondary-text: #5D3C80;
+    --primary-color: #2b1c3b;
+    --accent-color: #514376;
+}
+.darkmode{
   --base-color: #0e0c13;
-  --base-variant: #0e0c13;
+  --base-variant: #8f89a0;
   --text-color: #8f89a0;
   --secondary-text: #514376;
   --primary-color: #8f89a0;
@@ -71,6 +79,44 @@ body {
       height: 26vw;
     }
   }
+  button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+      background-color: var(--base-color);
+      color: var(--text-color);
+      border: 2px solid var(--primary-color);
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+
+  button:hover {
+      background-color: var(--text-color);
+      color: var(--base-color);
+      border: 2px solid var(--primary-color)
+
+  }  
+    #themeToggle{
+        height: 35px;
+        width: 35px;
+        padding: 0;
+        border-radius: 50%;
+        /*background-color: var(--base-color);*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    #themeToggle svg{
+        fill: var(--text-color);
+    }
+    #themeToggle:hover svg{
+        fill: var(--base-color);
+    }
   a{
     color: var(--secondary-text);
   }

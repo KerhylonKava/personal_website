@@ -16,20 +16,21 @@
 }
 
 body {
-  /*and you comment here using this...*/
-  font-family: "Shadows Into Light", cursive;
-  font-weight: 800;
-  background-color:var(--base-color);
-  color:var(--text-color);
+    /*cursor: url("arrow.svg"),pointer;*/
+    /*and you comment here using this...*/
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 800;
+    background-color:var(--base-color);
+    color:var(--text-color);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /*height: 50vh;*/
-  overflow: auto; /*Enables scrolling for whatever reason*/
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*height: 50vh;*/
+    overflow: auto; /*Enables scrolling for whatever reason*/
+    margin: 0;
 
   h1{
     font-family: "Sedgwick Ave Display", cursive;
@@ -80,12 +81,12 @@ body {
   .divItem{
     background-color: var(--base-color);
     padding: 1vw;
-    border: 5px solid var(--primary-color); /* 5px purple border */
-    border-radius: 10px; /* Rounds the corners */
+    border: 0.5vw solid var(--primary-color); /* 5px purple border */
+    border-radius: 1.4vw; /* Rounds the corners */
     .bordered-image {
     border: 5px solid var(--base-color); 
-      margin-top: 5%;
-      /*margin-bottom:-10%;*/
+      margin-top: 2%;
+      margin-bottom:-2%;
       height: 15vw;
     }
   }
@@ -113,8 +114,8 @@ body {
       font-size: 16px;
       font-family: "Shadows Into Light", cursive;
       font-weight: 800;
-      background-color: var(--text-color);
-      color: var(--base-color);
+      background-color: var(--base-color);
+      color: var(--text-color);
       border: 2px solid var(--primary-color);
       cursor: pointer;
       border-radius: 5px;
@@ -122,8 +123,8 @@ body {
   }
 
   button:hover {
-      background-color: var(--base-color);
-      color: var(--text-color);
+      background-color: var(--text-color);
+      color: var(--base-color);
       border: 2px solid var(--primary-color)
 
   }  
@@ -141,10 +142,13 @@ body {
         right: 10px;
     }
     #themeToggle svg{
-        fill: var(--base-color);
+        fill: var(--text-color);
     }
     #themeToggle:hover svg{
-        fill: var(--text-color);
+        fill: var(--base-color);
+    }
+    #fourOfour{
+        font-size:10vh;
     }
     /*
     .darkmode #themeToggle svg:last-child{
