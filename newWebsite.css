@@ -1,3 +1,5 @@
+/*and you comment here using this...*/
+/* Base colors */
 :root{
     --base-color: #D5C3EA;
     --base-variant: #D5C3EA;
@@ -6,6 +8,7 @@
     --primary-color: #2b1c3b;
     --accent-color: #514376;
 }
+/* Darkmode colors */
 .darkmode{
   --base-color: #0e0c13;
   --base-variant: #8f89a0;
@@ -16,8 +19,6 @@
 }
 
 body {
-    /*cursor: url("arrow.svg"),pointer;*/
-    /*and you comment here using this...*/
     font-family: "Shadows Into Light", cursive;
     font-weight: 800;
     background-color:var(--base-color);
@@ -47,6 +48,18 @@ body {
     margin-bottom: -15px;
     margin-top: -8px;
     font-family: "Sedgwick Ave Display", cursive;
+  }
+  summary {
+    font-family: "Sedgwick Ave Display", cursive;
+  }
+
+  blockquote {
+    font-family: "Caveat", cursive;
+    white-space: pre-line;
+    font-optical-sizing: auto;
+    font-size: 14pt;
+    font-weight: 500; /* use a value between 400 and 700 */
+    font-style: normal;
   }
   /*
   p{
@@ -168,7 +181,7 @@ body {
   ::selection {
   background-color: var(--accent-color);
   color: var(--base-variant); /*was white btw*/
-  border-radius: 9999px; /* fully rounded */
+  border-radius: 9999px; /* wanted to fully round, but doesn't work since the property doesn't apply to selections */
   padding: 0.2em 0.08em;
   }
 }

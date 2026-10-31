@@ -4,11 +4,11 @@ function updateName() {
     var displayElement = document.getElementById("displayName"); // Find the element to display the ghost's name
     
     // Check if the user entered something
-    if (ghostName.trim() == "Eddy") {
+    if (ghostName.trim().toLowerCase() == "eddy") {
         displayElement.textContent = "Hello, I'm " + ghostName + "!"; // ghost talking
         //add something about the weather
     }
-      else if (ghostName.trim().toLowerCase() == "esther") {
+      else if (ghostName.trim().toLowerCase() == "esther" || ghostName.trim().toLowerCase() == "kava" || ghostName.trim().toLowerCase() == "kerhylonkava" || ghostName.trim().toLowerCase() == "kerhylon kava") {
         displayElement.textContent = "Oh, that's actually the name of the programmer for this website... A different name maybe?";     
     }
     else if (ghostName.trim().toLowerCase() == "hello") {
@@ -18,6 +18,7 @@ function updateName() {
         displayElement.textContent = "Hello, my name is " + ghostName + "!";
     }
     else if (ghostName.trim() == "") {
-        displayElement.textContent = "I guess I'm nameless :("; // Default message if no input (sad ghost)
+        displayElement.textContent = "I guess I'm nameless :("; 
+        //If no input (sad ghost)
     }
 }
